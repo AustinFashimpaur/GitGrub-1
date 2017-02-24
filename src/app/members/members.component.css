@@ -27,7 +27,6 @@ h2 {
     margin:0;
 }
 
-
 @media (max-width: 600px) {
     #page {
         padding:1em;
@@ -43,3 +42,10 @@ h2 {
   overflow-y: scroll;
   height: calc(100vh - 192px);
 }
+
+.glyphicon-heart{
+
+  color: #FF7878;
+  font-size: 35px;
+}
+
