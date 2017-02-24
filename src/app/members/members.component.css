@@ -4,6 +4,10 @@
     margin-left:-35%;
 }
 
+.banner{
+  text-align: center;
+}
+
 header {
     background:#9E9E9E;
     width:100%;
@@ -41,6 +45,13 @@ h2 {
   display: inline-block;
   overflow-y: scroll;
   height: calc(100vh - 192px);
+  /*margin: 0 auto;*/
+  width: 100%;
+}
+
+.center-me{
+  margin: 0 auto;
+  width: 900px;
 }
 
 .glyphicon-heart{

@@ -3,17 +3,19 @@
     <button (click)="logout()" class="basic-btn">Logout</button>
   </header>
   <div id="page" [@moveInLeft]="state">
-    <h2 class="banner">Hey {{ name.auth.displayName }}, Welcome to Git Grub! Enjoy the Recipes.</h2><br>
+    <h2 class="banner">Hey {{ name.auth.displayName || 'Guy' }}, Welcome to Git Grub! Enjoy the Recipes.</h2><br>
     <!--<img src="assets/images/filler.png" />-->
   </div>
 
   <!--content-->
   <div class="scroll-me">
-    <div class="wellz well col-sm-1 col-md-3" *ngFor="let recipe of recipes | async">
-      <img class="pics" src="{{ recipe.image_url }}"><br>
-      <div class="bottomPart">
-        <h4 class="col-sm-9"><a href="{{ recipe.source_url }}">{{ recipe.title }}</a></h4><br>
-        <span class="glyphicon glyphicon-heart col-sm-3"></span>
+    <div class="center-me">
+      <div class="wellz well col-sm-1 col-md-3" *ngFor="let recipe of recipes | async">
+        <img class="pics" src="{{ recipe.image_url }}"><br>
+        <div class="bottomPart">
+          <h4 class="col-sm-9"><a href="{{ recipe.source_url }}">{{ recipe.title }}</a></h4><br>
+          <span class="glyphicon glyphicon-heart col-sm-3"></span>
+        </div>
       </div>
     </div>
   </div>

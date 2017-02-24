@@ -117,6 +117,8 @@ margin: 12px;
   text-align: center;
   padding: 15px;
 display: inline-block;
+  height: 350px;
+  width: 30%;
 }
 
 /*.memberz{*/
@@ -125,4 +127,5 @@ display: inline-block;
 
 .pics{
   height: 250px;
+  /*width: auto;*/
 }
