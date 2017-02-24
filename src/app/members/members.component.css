@@ -40,6 +40,6 @@ h2 {
 
 .scroll-me {
   display: inline-block;
-  height: 100%;
   overflow-y: scroll;
+  height: calc(100vh - 192px);
 }
