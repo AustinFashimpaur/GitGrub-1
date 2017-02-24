@@ -111,3 +111,19 @@ h2 {
     font-size: 1em;
   }
 }
+
+.wellz{
+margin: 25px;
+  text-align: center;
+  padding: 4px;
+  border-radius: 8px;
+/*display: inline-block;*/
+}
+
+/*.memberz{*/
+  /*display: inline-block;*/
+/*}*/
+
+.pics{
+  height: 250px;
+}

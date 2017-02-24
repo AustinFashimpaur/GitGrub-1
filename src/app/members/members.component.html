@@ -1,16 +1,21 @@
-<div class="form-container" id="toolbar">
+<div class="memberz form-container" id="toolbar">
   <header [@fallIn]="state">
     <button (click)="logout()" class="basic-btn">Logout</button>
   </header>
   <div id="page" [@moveInLeft]="state">
-    <h2>Hey {{ name.auth.displayName }}!</h2>
-
+    <h2 class="banner">Hey {{ name.auth.displayName }}, Welcome to Git Grub! Enjoy the Recipes.</h2><br>
     <!--<img src="assets/images/filler.png" />-->
+  </div>
 
 
+  <!--content-->
+  <div class="scroll-me">
     <div class="wellz well col-xs-1 col-md-3" *ngFor="let recipe of recipes | async">
-        {{ recipe.title }}
+      <img class="pics" src="{{ recipe.image_url }}"><br>
+      <h4><a href="{{ recipe.source_url }}">{{ recipe.title }}</a></h4><br>
+
     </div>
   </div>
 
 </div>
+
