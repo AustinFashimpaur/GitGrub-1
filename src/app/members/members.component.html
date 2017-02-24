@@ -10,10 +10,12 @@
 
   <!--content-->
   <div class="scroll-me">
-    <div class="wellz well col-xs-1 col-md-3" *ngFor="let recipe of recipes | async">
+    <div class="wellz well col-sm-1 col-md-3" *ngFor="let recipe of recipes | async">
       <img class="pics" src="{{ recipe.image_url }}"><br>
-      <h4><a href="{{ recipe.source_url }}">{{ recipe.title }}</a></h4><br>
-
+      <div class="bottomPart">
+        <h4 class="col-sm-9"><a href="{{ recipe.source_url }}">{{ recipe.title }}</a></h4><br>
+        <span class="glyphicon glyphicon-heart col-sm-3"></span>
+      </div>
     </div>
   </div>
 
