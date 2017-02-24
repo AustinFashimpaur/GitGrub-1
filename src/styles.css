@@ -16,6 +16,7 @@ body {
   position: fixed;
   left: 50%;
   margin-left: -250px;
+  border-radius: 4px;
 }
 
 button {
@@ -28,7 +29,8 @@ button {
 
 .basic-btn {
   background: #37474F;
-  color: white;
+  color: whitesmoke;
+  border-radius: 4px;
 }
 
 input.txt {
