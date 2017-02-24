@@ -1,7 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-import { AngularFire, AuthProviders, AuthMethods } from 'angularfire2';
-import { Router } from '@angular/router';
-import { moveIn, fallIn, moveInLeft } from '../router.animations';
+import {Component, OnInit} from '@angular/core';
+import {AngularFire, AuthProviders, AuthMethods, FirebaseListObservable} from 'angularfire2';
+import {Router} from '@angular/router';
+import {moveIn, fallIn, moveInLeft} from '../router.animations';
 
 @Component({
   selector: 'app-members',
@@ -14,10 +14,12 @@ export class MembersComponent implements OnInit {
   name: any;
   state: string = '';
 
-  constructor(public af: AngularFire,private router: Router) {
+  recipes: FirebaseListObservable<any>;
 
+  constructor(public af: AngularFire, private router: Router) {
+    this.recipes = af.database.list('/recipes');
     this.af.auth.subscribe(auth => {
-      if(auth) {
+      if (auth) {
         this.name = auth;
       }
     });
@@ -25,8 +27,8 @@ export class MembersComponent implements OnInit {
   }
 
   logout() {
-     this.af.auth.logout();
-     this.router.navigateByUrl('/login');
+    this.af.auth.logout();
+    this.router.navigateByUrl('/login');
   }
 
 
