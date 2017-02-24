@@ -1,44 +1,47 @@
 #toolbar {
-    padding:0;
-    width:70%;
-    margin-left:-35%;
+  padding: 0;
+  width: 70%;
+  margin-left: -35%;
 }
 
-.banner{
+.banner {
   text-align: center;
 }
 
 header {
-    background:#9E9E9E;
-    width:100%;
+  background: #9E9E9E;
+  width: 100%;
 }
 
 .basic-btn {
-    width:100px;
-    margin:0;
+  width: 100px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 15px;
 }
 
 #page {
-    padding:3em;
-    margin:0;
+  padding: 3em;
+  margin: 0;
 }
 
 #page img {
-    margin-top:30px;
+  margin-top: 30px;
 }
 
 h2 {
-    margin:0;
+  margin: 0;
 }
 
 @media (max-width: 600px) {
-    #page {
-        padding:1em;
-    }
-    #toolbar {
-        width:90%;
-        margin-left: -45%;
-    }
+  #page {
+    padding: 1em;
+  }
+
+  #toolbar {
+    width: 90%;
+    margin-left: -45%;
+  }
 }
 
 .scroll-me {
@@ -49,14 +52,24 @@ h2 {
   width: 100%;
 }
 
-.center-me{
+.center-me {
   margin: 0 auto;
   width: 900px;
 }
 
-.glyphicon{
+.glyphicon {
 
   color: #FF7878;
   font-size: 25px;
 }
 
+/*.glyphicon glyphicon-fire{*/
+/*color: orangered;*/
+/*font-size: 50px;*/
+
+/*}*/
+
+.form-group {
+  width: 55%;
+  margin: 0 auto;
+}
