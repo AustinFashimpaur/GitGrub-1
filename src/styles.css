@@ -5,8 +5,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   font-family: 'Roboto', sans-serif;
-  background: #E0E0E0;
-
+  /*background: #E0E0E0;*/
+  background: url('assets/images/mcCheese.png');
 }
 
 .form-container {
@@ -128,6 +128,6 @@ display: inline-block;
 /*}*/
 
 .pics{
-  height: 250px;
+  height: 200px;
   /*width: auto;*/
 }
