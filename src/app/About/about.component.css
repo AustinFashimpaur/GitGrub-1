@@ -1,7 +1,12 @@
 body {
   background: url('../../assets/images/MayorMcCheese.png');
+
 }
 
+#aboutme{
+  text-align: center;
+  padding: 4px;
+}
 
 #toolbar {
   padding: 0;

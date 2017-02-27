@@ -6,28 +6,19 @@
   </header>
   <div id="mccheese_background">
     <div id="page" [@moveInLeft]="state">
-      <h2 class="banner">Hey {{ name.auth.displayName || 'Friend' }}, Welcome to Git Grub! Enjoy this About Page.</h2><br>
+      <h2 class="banner">Hey {{ name.auth.displayName || 'Friend' }}, Welcome to Git Grub! Enjoy this About Page.</h2>
+      <br>
       <!--<img src="assets/images/filler.png" />-->
     </div>
   </div>
 
-  <h5> This is the about page.</h5>
+  <div id="aboutme">
+  <h3> Welcome to the about page.</h3>
   <p>
     This app was created by Austin Fashimpaur, Bryce Groesbeck and Kevin Kirkman.
+    This app is dedicated to our fallen comrade, Mayor McCheese.
   </p>
-
-  <!--&lt;!&ndash;content&ndash;&gt;-->
-  <!--<div class="scroll-me">-->
-    <!--<div class="center-me">-->
-      <!--<div class="wellz well col-sm-1 col-md-3" *ngFor="let recipe of recipes | async">-->
-        <!--<img class="pics" src="{{ recipe.image_url }}"><br>-->
-        <!--<div class="bottomPart">-->
-          <!--<h5 class="col-sm-9"><a href="{{ recipe.source_url }}">{{ recipe.title }}</a></h5><br>-->
-          <!--<span class="glyphicon glyphicon-heart-empty col-sm-3"></span>-->
-        <!--</div>-->
-      <!--</div>-->
-    <!--</div>-->
-  <!--</div>-->
+</div>
 
 </div>
 
