@@ -1,0 +1,90 @@
+body {
+  background: url('../../assets/images/MayorMcCheese.png');
+}
+
+
+#toolbar {
+  padding: 0;
+  width: 70%;
+  margin-left: -35%;
+}
+
+.banner {
+  text-align: center;
+}
+
+header {
+  background: #9E9E9E;
+  width: 100%;
+  border-radius: 4px;
+}
+
+.basic-btn {
+  width: 100px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#page {
+  padding: 3em;
+  margin: 0;
+}
+
+#page img {
+  margin-top: 30px;
+}
+
+h2 {
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  #page {
+    padding: 1em;
+  }
+
+  #toolbar {
+    width: 90%;
+    margin-left: -45%;
+  }
+}
+
+.scroll-me {
+  display: inline-block;
+  overflow-y: scroll;
+  height: calc(100vh - 290px);
+  /*margin: 0 auto;*/
+  width: 100%;
+  background: #9E9E9E;
+  border-radius: 4px;
+}
+
+.center-me {
+  margin: 0 auto;
+  width: 900px;
+}
+
+.glyphicon {
+
+  color: #FF7878;
+  font-size: 25px;
+}
+
+/*.glyphicon glyphicon-fire{*/
+/*color: orangered;*/
+/*font-size: 50px;*/
+
+/*}*/
+
+.form-group {
+  width: 55%;
+  margin: 16px auto;
+}
+
+#mccheese_background {
+  background: url('../../assets/images/mcCheese.png');
+  color: #515151;
+  border-radius: 4px;
+}

@@ -11,6 +11,8 @@ import { MembersComponent } from './members/members.component';
 import { AuthGuard } from './auth.service';
 import { routes } from './app.routes';
 import { AlertModule } from 'ng2-bootstrap';
+import {FavoritesComponent} from "./Favorites/favorites.component";
+import {AboutComponent} from "./About/about.component";
 
 // Must export the config
 export const firebaseConfig = {
@@ -27,7 +29,10 @@ export const firebaseConfig = {
     LoginComponent,
     EmailComponent,
     SignupComponent,
-    MembersComponent
+    MembersComponent,
+    FavoritesComponent,
+    AboutComponent
+
   ],
   imports: [
     BrowserModule,

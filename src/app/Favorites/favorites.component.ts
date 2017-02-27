@@ -3,14 +3,15 @@ import {AngularFire, AuthProviders, AuthMethods, FirebaseListObservable} from 'a
 import {Router} from '@angular/router';
 import {moveIn, fallIn, moveInLeft} from '../router.animations';
 
+
 @Component({
   selector: 'app-members',
-  templateUrl: './members.component.html',
-  styleUrls: ['./members.component.css'],
+  templateUrl: 'favorites.component.html',
+  styleUrls: ['favorites.component.css'],
   animations: [moveIn(), fallIn(), moveInLeft()],
   host: {'[@moveIn]': ''}
 })
-export class MembersComponent implements OnInit {
+export class FavoritesComponent implements OnInit {
   name: any;
   state: string = '';
 
@@ -31,8 +32,9 @@ export class MembersComponent implements OnInit {
     this.router.navigateByUrl('/login');
   }
 
-  favz(){
-    this.router.navigateByUrl('/favorites');
+  members() {
+    this.router.navigateByUrl('/members');
+
   }
 
   about() {
@@ -42,3 +44,20 @@ export class MembersComponent implements OnInit {
   ngOnInit() {
   }
 }
+
+// import {moveIn, fallIn, moveInLeft} from "../router.animations";
+// import {Component} from "@angular/core/src/metadata/directives";
+// import {Router} from '@angular/router';
+//
+// @Component({
+//
+//   templateUrl: './favorites.component.html',
+//   //styleUrls: ['./members.component.css'],
+//   animations: [moveIn(), fallIn(), moveInLeft()],
+//   host: {'[@moveIn]': ''}
+// })
+// export class FavoritesComponent {
+
+
+
+

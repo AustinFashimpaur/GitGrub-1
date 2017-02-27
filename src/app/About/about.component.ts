@@ -3,17 +3,17 @@ import {AngularFire, AuthProviders, AuthMethods, FirebaseListObservable} from 'a
 import {Router} from '@angular/router';
 import {moveIn, fallIn, moveInLeft} from '../router.animations';
 
+
 @Component({
   selector: 'app-members',
-  templateUrl: './members.component.html',
-  styleUrls: ['./members.component.css'],
+  templateUrl: 'about.component.html',
+  styleUrls: ['about.component.css'],
   animations: [moveIn(), fallIn(), moveInLeft()],
   host: {'[@moveIn]': ''}
 })
-export class MembersComponent implements OnInit {
+export class AboutComponent implements OnInit {
   name: any;
   state: string = '';
-
   recipes: FirebaseListObservable<any>;
 
   constructor(public af: AngularFire, private router: Router) {
@@ -31,12 +31,13 @@ export class MembersComponent implements OnInit {
     this.router.navigateByUrl('/login');
   }
 
-  favz(){
-    this.router.navigateByUrl('/favorites');
+  members() {
+    this.router.navigateByUrl('/members');
+
   }
 
-  about() {
-    this.router.navigateByUrl('/about');
+  favz(){
+    this.router.navigateByUrl('/favorites');
   }
 
   ngOnInit() {
