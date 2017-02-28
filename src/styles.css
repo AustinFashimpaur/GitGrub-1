@@ -28,10 +28,56 @@ button {
 }
 
 .basic-btn {
-  background: #37474F;
+  /*background: #37474F;*/
+  background: #F4511E;
   color: whitesmoke;
   border-radius: 4px;
+  border-color: whitesmoke;
 }
+
+.basic-btn:hover,
+.basic-btn:focus,
+.basic-btn:active,
+.basic-btn.active,
+.open .dropdown-toggle.basic-btn {
+  color: #515151;
+  background-color: whitesmoke;
+  border-color: #F2F2F2;
+
+}
+
+.basic-btn:active,
+.basic-btn.active,
+.open .dropdown-toggle.basic-btn {
+  background-image: none;
+}
+
+.basic-btn.disabled,
+.basic-btn[disabled],
+fieldset[disabled] .basic-btn,
+.basic-btn.disabled:hover,
+.basic-btn[disabled]:hover,
+fieldset[disabled] .basic-btn:hover,
+.basic-btn.disabled:focus,
+.basic-btn[disabled]:focus,
+fieldset[disabled] .basic-btn:focus,
+.basic-btn.disabled:active,
+.basic-btn[disabled]:active,
+fieldset[disabled] .basic-btn:active,
+.basic-btn.disabled.active,
+.basic-btn[disabled].active,
+fieldset[disabled] .basic-btn.active {
+  background-color: #F4511E;
+  border-color: #F2F2F2;
+}
+
+.basic-btn .badge {
+  color: #F4511E;
+  background-color: #FFFFFF;
+}
+
+
+
 
 input.txt {
   background: #fff !important;
@@ -114,20 +160,20 @@ h2 {
   }
 }
 
-.wellz{
-margin: 12px;
+.wellz {
+  margin: 12px;
   text-align: center;
   padding: 15px;
-display: inline-block;
-  height: 350px;
+  display: inline-block;
+  min-height: 325px;
   width: 30%;
 }
 
 /*.memberz{*/
-  /*display: inline-block;*/
+/*display: inline-block;*/
 /*}*/
 
-.pics{
+.pics {
   height: 200px;
   /*width: auto;*/
 }
