@@ -14,6 +14,7 @@ import { AlertModule } from 'ng2-bootstrap';
 import {FavoritesComponent} from "./Favorites/favorites.component";
 import {AboutComponent} from "./About/about.component";
 
+
 // Must export the config
 export const firebaseConfig = {
   apiKey: "AIzaSyBVR8A-Mawq6aJiudG-i1Aes_dVf3JTovw",

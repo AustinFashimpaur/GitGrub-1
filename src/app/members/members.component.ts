@@ -14,10 +14,18 @@ export class MembersComponent implements OnInit {
   name: any;
   state: string = '';
 
-  recipes: FirebaseListObservable<any>;
+  userSearch: string = '';
+  public recipes: any[];
+  public filteredRec: any[];
 
   constructor(public af: AngularFire, private router: Router) {
-    this.recipes = af.database.list('/recipes');
+    af.database
+      .list('/recipes')
+      .subscribe(recipes => {
+        this.recipes = recipes;
+        this.filteredRec = this.recipes;
+        console.log(this.recipes);
+      });
     this.af.auth.subscribe(auth => {
       if (auth) {
         this.name = auth;
@@ -31,12 +39,18 @@ export class MembersComponent implements OnInit {
     this.router.navigateByUrl('/login');
   }
 
-  favz(){
+  favz() {
     this.router.navigateByUrl('/favorites');
   }
 
   about() {
     this.router.navigateByUrl('/about');
+  }
+
+  myFilter() {
+    this.filteredRec = this.recipes.filter(recipe => {
+      return recipe.title.toLowerCase().indexOf(this.userSearch.toLowerCase()) > -1
+    });
   }
 
   ngOnInit() {

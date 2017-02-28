@@ -7,19 +7,17 @@
   <div id="mccheese_background">
     <div id="page" [@moveInLeft]="state">
       <h2 class="banner">Hey {{ name.auth.displayName || 'Friend' }}, Welcome to Git Grub! Enjoy the Recipes.</h2><br>
-      <!--<img src="assets/images/filler.png" />-->
     </div>
   </div>
   <div class="form-group">
-    <input type="text" class="form-control" placeholder="search recipes...">
-    <!--<span class="glyphicon glyphicon-fire col-sm-3"></span>-->
+    <input type="text" class="form-control" id="userSearch" required [(ngModel)]="userSearch" (keydown)="myFilter()"
+           name="name" placeholder="Search Recipes...">
   </div>
-
 
   <!--content-->
   <div class="scroll-me">
     <div class="center-me">
-      <div class="wellz well col-sm-1 col-md-3" *ngFor="let recipe of recipes | async">
+      <div class="wellz well col-sm-1 col-md-3" *ngFor="let recipe of filteredRec">
         <img class="pics" src="{{ recipe.image_url }}"><br>
         <div class="bottomPart">
           <h5 class="col-sm-9"><a href="{{ recipe.source_url }}">{{ recipe.title }}</a></h5><br>
@@ -28,6 +26,5 @@
       </div>
     </div>
   </div>
-
 </div>
 
