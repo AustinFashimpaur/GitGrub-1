@@ -3,15 +3,21 @@ import {AngularFire, AuthProviders, AuthMethods, FirebaseListObservable} from 'a
 import {Router} from '@angular/router';
 import {moveIn, fallIn, moveInLeft} from '../router.animations';
 import {RecipeService} from "../Favorites/recipe.service";
+import {ToasterContainerComponent, ToasterService} from 'angular2-toaster';
+// import {bootstrapItem} from "@angular/cli/lib/ast-tools";
 
 @Component({
   selector: 'app-members',
+  // directives: [ToasterContainerComponent],
+  providers: [ToasterService],
   templateUrl: './members.component.html',
   styleUrls: ['./members.component.css'],
   animations: [moveIn(), fallIn(), moveInLeft()],
   host: {'[@moveIn]': ''}
 })
 export class MembersComponent implements OnInit {
+  private toasterService: ToasterService;
+
   name: any;
   state: string = '';
 
@@ -19,7 +25,7 @@ export class MembersComponent implements OnInit {
   public recipes: any[];
   public filteredRec: any[];
 
-  constructor(public af: AngularFire, private router: Router, private recipeService: RecipeService) {
+  constructor(public af: AngularFire, private router: Router, private recipeService: RecipeService, toasterService: ToasterService) {
     this.af.auth.subscribe(auth => {
       if (auth) {
         console.log(auth);
@@ -33,7 +39,7 @@ export class MembersComponent implements OnInit {
       console.log(this.recipes);
     });
 
-
+    this.toasterService = toasterService;
   }
 
   logout() {
@@ -43,6 +49,7 @@ export class MembersComponent implements OnInit {
 
   favz() {
     this.router.navigateByUrl('/favorites');
+
   }
 
   about() {
@@ -55,10 +62,14 @@ export class MembersComponent implements OnInit {
     });
   }
 
+
   addFavs(recipe){
     this.recipeService.addFavz(recipe);
+
   }
 
   ngOnInit() {
   }
+  // angular.bootstrap(app-members);
 }
+
