@@ -3,6 +3,7 @@ import {AngularFire, AuthProviders, AuthMethods, FirebaseListObservable} from 'a
 import {Router} from '@angular/router';
 import {moveIn, fallIn, moveInLeft} from '../router.animations';
 import {RecipeService} from "./recipe.service";
+import {Observable} from "rxjs";
 
 
 @Component({
@@ -16,7 +17,7 @@ export class FavoritesComponent implements OnInit {
   name: any;
   state: string = '';
 
-  recipes: FirebaseListObservable<any>;
+  recipes: Observable<any>;
 
   constructor(public af: AngularFire, private router: Router, private recipeService: RecipeService) {
     this.recipes = af.database.list('/recipes');
@@ -26,11 +27,16 @@ export class FavoritesComponent implements OnInit {
       }
     });
 
-    // recipeService.getFavz().subscribe(recipes => {
-    //   this.recipes = recipes;
-    //   this.filteredRec = this.recipes;
-    //   console.log(this.recipes);
-    // });
+    this.recipes = recipeService.getAll().map(recipes => {
+      console.log(recipes.users);
+      return recipes.filter(recipe => {
+        if (recipe.users && recipe.users[this.name.uid]){
+          return true;
+        }
+        else {return false;}
+      });
+
+    })
 
   }
 
@@ -48,8 +54,8 @@ export class FavoritesComponent implements OnInit {
     this.router.navigateByUrl('/about');
   }
 
-  removeFavs() {
-    this.recipeService.removeFavz();
+  removeFavs(recipe) {
+    this.recipeService.removeFavz(recipe);
   }
 
 

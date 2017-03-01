@@ -17,6 +17,7 @@ export class LoginComponent implements OnInit {
 
       this.af.auth.subscribe(auth => {
       if(auth) {
+
         this.router.navigateByUrl('/members');
       }
     });

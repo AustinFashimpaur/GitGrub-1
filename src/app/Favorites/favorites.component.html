@@ -16,18 +16,19 @@
   </div>
 
 
-  <!--&lt;!&ndash;content&ndash;&gt;-->
-  <!--<div class="scroll-me">-->
-    <!--<div class="center-me">-->
-      <!--<div class="wellz well col-sm-1 col-md-3" *ngFor="let recipe of recipes | async">-->
-        <!--<img class="pics" src="{{ recipe.image_url }}"><br>-->
-        <!--<div class="bottomPart">-->
-          <!--<h5 class="col-sm-9"><a href="{{ recipe.source_url }}">{{ recipe.title }}</a></h5><br>-->
-          <!--<span class="glyphicon glyphicon-heart-empty col-sm-3"></span>-->
-        <!--</div>-->
-      <!--</div>-->
-    <!--</div>-->
-  <!--</div>-->
+
+  <!--content-->
+  <div class="scroll-me">
+    <div class="center-me">
+      <div class="wellz well col-sm-1 col-md-3" *ngFor="let recipe of recipes | async">
+        <img class="pics" src="{{ recipe.image_url }}"/><br>
+        <div class="bottomPart">
+          <h5 class="col-sm-9"><a href="{{ recipe.source_url }}">{{ recipe.title }}</a></h5><br>
+          <span class="glyphicon glyphicon-heart col-sm-3" (click)="removeFavs(recipe)" ></span>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </div>
 
