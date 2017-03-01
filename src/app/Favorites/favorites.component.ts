@@ -4,16 +4,19 @@ import {Router} from '@angular/router';
 import {moveIn, fallIn, moveInLeft} from '../router.animations';
 import {RecipeService} from "./recipe.service";
 import {Observable} from "rxjs";
+import {ToasterContainerComponent, ToasterService} from 'angular2-toaster';
 
 
 @Component({
   selector: 'app-members',
+  providers: [ToasterService],
   templateUrl: 'favorites.component.html',
   styleUrls: ['favorites.component.css'],
   animations: [moveIn(), fallIn(), moveInLeft()],
   host: {'[@moveIn]': ''}
 })
 export class FavoritesComponent implements OnInit {
+  private toasterService: ToasterService;
   name: any;
   state: string = '';
 
@@ -21,7 +24,7 @@ export class FavoritesComponent implements OnInit {
   recipes: Observable<any>;
 
 
-  constructor(public af: AngularFire, private router: Router, private recipeService: RecipeService) {
+  constructor(public af: AngularFire, private router: Router, private recipeService: RecipeService, toasterService: ToasterService) {
     this.recipes = af.database.list('/recipes');
     af.auth.subscribe(auth => {
       if (auth) {
@@ -32,14 +35,16 @@ export class FavoritesComponent implements OnInit {
     this.recipes = recipeService.getAll().map(recipes => {
       console.log(recipes.users);
       return recipes.filter(recipe => {
-        if (recipe.users && recipe.users[this.name.uid]){
+        if (recipe.users && recipe.users[this.name.uid]) {
           return true;
         }
-        else {return false;}
+        else {
+          return false;
+        }
       });
 
-    })
-
+    });
+    this.toasterService = toasterService;
 
   }
 
@@ -59,13 +64,14 @@ export class FavoritesComponent implements OnInit {
 
   removeFavs(recipe) {
     this.recipeService.removeFavz(recipe);
+    this.toasterService.pop('warning', 'Removed from favorites!');
   }
 
-  getFavs(){
-    this.filteredFavs = this.recipes.filter(recipe => {
-      return (recipe.users && recipe.users.indexOf(this.name.uid) > -1);
-    });
-  }
+  // getFavs(){
+  //   this.filteredFavs = this.recipes.filter(recipe => {
+  //     return (recipe.users && recipe.users.indexOf(this.name.uid) > -1);
+  //   });
+  // }
 
 
   ngOnInit() {

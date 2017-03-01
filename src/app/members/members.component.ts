@@ -63,13 +63,15 @@ export class MembersComponent implements OnInit {
   }
 
 
-  addFavs(recipe){
+  addFavs(recipe) {
     this.recipeService.addFavz(recipe);
+    this.toasterService.pop('info', 'Added to favorites!');
 
   }
 
   ngOnInit() {
   }
+
   // angular.bootstrap(app-members);
 }
 

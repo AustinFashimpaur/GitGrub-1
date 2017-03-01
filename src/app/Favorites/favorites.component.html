@@ -6,7 +6,8 @@
   </header>
   <div id="mccheese_background">
     <div id="page" [@moveInLeft]="state">
-      <h2 class="banner">Hey {{ name.auth.displayName || 'Friend' }}, Welcome to Git Grub! Enjoy those Favorites.</h2><br>
+      <h2 class="banner">Hey {{ name.auth.displayName || 'Friend' }}, Welcome to Git Grub! Enjoy those Favorites.</h2>
+      <br>
       <!--<img src="assets/images/filler.png" />-->
     </div>
   </div>
@@ -16,7 +17,6 @@
   </div>
 
 
-
   <!--content-->
   <div class="scroll-me">
     <div class="center-me">
@@ -24,10 +24,11 @@
         <img class="pics" src="{{ recipe.image_url }}"/><br>
         <div class="bottomPart">
           <h5 class="col-sm-9"><a href="{{ recipe.source_url }}">{{ recipe.title }}</a></h5><br>
-          <span class="glyphicon glyphicon-heart col-sm-3" (click)="removeFavs(recipe)" ></span>
+          <span class="glyphicon glyphicon-heart col-sm-3" (click)="removeFavs(recipe)"></span>
         </div>
       </div>
     </div>
+    <toaster-container></toaster-container>
   </div>
 
 </div>
