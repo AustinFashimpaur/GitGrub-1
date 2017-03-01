@@ -28,6 +28,7 @@ export class MembersComponent implements OnInit {
   constructor(public af: AngularFire, private router: Router, private recipeService: RecipeService, toasterService: ToasterService) {
     this.af.auth.subscribe(auth => {
       if (auth) {
+        console.log(auth);
         this.name = auth;
       }
     });
@@ -61,11 +62,11 @@ export class MembersComponent implements OnInit {
     });
   }
 
-  addFavs(){
-    this.recipeService.addFavz();
-    this.toasterService.pop('info', 'Added to your favorites!');
-  }
 
+  addFavs(recipe){
+    this.recipeService.addFavz(recipe);
+
+  }
 
   ngOnInit() {
   }
