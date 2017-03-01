@@ -18,7 +18,7 @@ export class AboutComponent implements OnInit {
 
   constructor(public af: AngularFire, private router: Router) {
     this.recipes = af.database.list('/recipes');
-    this.af.auth.subscribe(auth => {
+    af.auth.subscribe(auth => {
       if (auth) {
         this.name = auth;
       }

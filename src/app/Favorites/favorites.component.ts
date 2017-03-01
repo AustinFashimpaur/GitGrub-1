@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {AngularFire, AuthProviders, AuthMethods, FirebaseListObservable} from 'angularfire2';
 import {Router} from '@angular/router';
 import {moveIn, fallIn, moveInLeft} from '../router.animations';
+import {RecipeService} from "./recipe.service";
 
 
 @Component({
@@ -17,13 +18,19 @@ export class FavoritesComponent implements OnInit {
 
   recipes: FirebaseListObservable<any>;
 
-  constructor(public af: AngularFire, private router: Router) {
+  constructor(public af: AngularFire, private router: Router, private recipeService: RecipeService) {
     this.recipes = af.database.list('/recipes');
-    this.af.auth.subscribe(auth => {
+    af.auth.subscribe(auth => {
       if (auth) {
         this.name = auth;
       }
     });
+
+    // recipeService.getFavz().subscribe(recipes => {
+    //   this.recipes = recipes;
+    //   this.filteredRec = this.recipes;
+    //   console.log(this.recipes);
+    // });
 
   }
 
@@ -40,6 +47,11 @@ export class FavoritesComponent implements OnInit {
   about() {
     this.router.navigateByUrl('/about');
   }
+
+  removeFavs() {
+    this.recipeService.removeFavz();
+  }
+
 
   ngOnInit() {
   }

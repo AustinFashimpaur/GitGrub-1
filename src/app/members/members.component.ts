@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {AngularFire, AuthProviders, AuthMethods, FirebaseListObservable} from 'angularfire2';
 import {Router} from '@angular/router';
 import {moveIn, fallIn, moveInLeft} from '../router.animations';
+import {RecipeService} from "../Favorites/recipe.service";
 
 @Component({
   selector: 'app-members',
@@ -18,19 +19,19 @@ export class MembersComponent implements OnInit {
   public recipes: any[];
   public filteredRec: any[];
 
-  constructor(public af: AngularFire, private router: Router) {
-    af.database
-      .list('/recipes')
-      .subscribe(recipes => {
-        this.recipes = recipes;
-        this.filteredRec = this.recipes;
-        console.log(this.recipes);
-      });
+  constructor(public af: AngularFire, private router: Router, private recipeService: RecipeService) {
     this.af.auth.subscribe(auth => {
       if (auth) {
         this.name = auth;
       }
     });
+
+    recipeService.getAll().subscribe(recipes => {
+      this.recipes = recipes;
+      this.filteredRec = this.recipes;
+      console.log(this.recipes);
+    });
+
 
   }
 
@@ -51,6 +52,10 @@ export class MembersComponent implements OnInit {
     this.filteredRec = this.recipes.filter(recipe => {
       return recipe.title.toLowerCase().indexOf(this.userSearch.toLowerCase()) > -1
     });
+  }
+
+  addFavs(){
+    this.recipeService.addFavz()
   }
 
   ngOnInit() {
