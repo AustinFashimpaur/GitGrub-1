@@ -10,10 +10,6 @@ export class RecipeService {
     return this.af.database.list('/recipes');
   };
 
-// Returns the User Favorites
-  getFavz() {
-
-  }
 
 // Add favorites to list (stays on service)
   addFavz(){
