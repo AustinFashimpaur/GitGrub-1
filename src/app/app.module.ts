@@ -14,7 +14,7 @@ import { AlertModule } from 'ng2-bootstrap';
 import { FavoritesComponent } from "./Favorites/favorites.component";
 import { AboutComponent } from "./About/about.component";
 import { RecipeService } from "./Favorites/recipe.service";
-
+import {ToasterModule, ToasterService} from 'angular2-toaster';
 
 
 // Must export the config
@@ -44,7 +44,8 @@ export const firebaseConfig = {
     HttpModule,
     AngularFireModule.initializeApp(firebaseConfig),
     routes,
-    AlertModule.forRoot()
+    AlertModule.forRoot(),
+    ToasterModule
   ],
   providers: [AuthGuard, RecipeService],
   bootstrap: [AppComponent]

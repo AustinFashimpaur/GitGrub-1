@@ -17,6 +17,7 @@ export class FavoritesComponent implements OnInit {
   state: string = '';
 
   recipes: FirebaseListObservable<any>;
+  public filteredFavs: any;
 
   constructor(public af: AngularFire, private router: Router, private recipeService: RecipeService) {
     this.recipes = af.database.list('/recipes');
@@ -26,11 +27,6 @@ export class FavoritesComponent implements OnInit {
       }
     });
 
-    // recipeService.getFavz().subscribe(recipes => {
-    //   this.recipes = recipes;
-    //   this.filteredRec = this.recipes;
-    //   console.log(this.recipes);
-    // });
 
   }
 
@@ -50,6 +46,12 @@ export class FavoritesComponent implements OnInit {
 
   removeFavs() {
     this.recipeService.removeFavz();
+  }
+
+  getFavs(){
+    this.filteredFavs = this.recipes.filter(recipe => {
+      return (recipe.users && recipe.users.indexOf(this.name.uid) > -1);
+    });
   }
 
 
