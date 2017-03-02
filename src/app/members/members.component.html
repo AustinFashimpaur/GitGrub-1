@@ -23,8 +23,8 @@
         <div class="bottomPart">
           <h5 class="col-sm-9"><a href="{{ recipe.source_url }}">{{ recipe.title }}</a></h5><br>
 
-          <span *ngIf="isFav(recipe)" class="gliph glyphicon glyphicon-heart col-sm-3" (click)="removeFavs(recipe)"></span>
-          <span *ngIf="!isFav(recipe)" class="gliph glyphicon glyphicon-heart-empty col-sm-3" (click)="addFavs(recipe)"></span>
+          <span *ngIf="isFav(recipe)" title="Remove Favorite" class="gliph glyphicon glyphicon-heart col-sm-3" (click)="removeFavs(recipe)"></span>
+          <span *ngIf="!isFav(recipe)" title="Add Favorite" class="gliph glyphicon glyphicon-heart-empty col-sm-3" (click)="addFavs(recipe)"></span>
 
         </div>
       </div>

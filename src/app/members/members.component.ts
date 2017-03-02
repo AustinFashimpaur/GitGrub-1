@@ -65,20 +65,19 @@ export class MembersComponent implements OnInit {
 
   addFavs(recipe) {
     this.recipeService.addFavz(recipe);
-    this.toasterService.pop('info', 'Added to favorites!');
+    this.toasterService.pop('info', 'Added', recipe.title + ' to Favorites');
 
   }
 
   removeFavs(recipe) {
     this.recipeService.removeFavz(recipe);
-    this.toasterService.pop('warning', 'Removed from favorites!');
+    this.toasterService.pop('warning', 'Removed', recipe.title + ' from Favorites');
   }
 
   isFav(recipe) {
     return recipe.users && recipe.users[this.name.uid]
 
   }
-
 
   ngOnInit() {
   }
