@@ -6,9 +6,10 @@ body {
   /*background: #E2E4E6;*/
   height: 100%;
   background-image: url('assets/images/newback.png');
-  background-position: top;
+  /*background-position: center;*/
   background-repeat: no-repeat;
   background-size: cover;
+
 
 }
 
