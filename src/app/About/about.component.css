@@ -3,6 +3,10 @@
   text-align: center;
 }
 
+#logo:hover {
+  transform: rotate(360deg) scale(1.1);
+}
+
 #aboutme{
   text-align: center;
   padding: 4px;
