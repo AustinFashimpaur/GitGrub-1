@@ -6,11 +6,11 @@
   </header>
   <div id="mccheese_background">
     <div id="logo1">
-      <img [@moveInLeft]="state" id=logo src="../../assets/images/logo2.png"/>
+      <img [@moveInLeft]="state" id=logo src="../../assets/images/logo3.png"/>
     </div>
 
   </div>
-  <h2 [@moveInLeft]="state" class="banner">Hey {{ name.auth.displayName || 'Friend' }}, Welcome to Git Grub! Enjoy the Recipes.</h2><br>
+  <h2 [@moveInLeft]="state" class="banner">Hey {{ name.auth.displayName || name.auth.email  }}, Welcome to Git Grub! Enjoy the Recipes.</h2><br>
   <div class="form-group">
     <input [@fallIn]="state" type="text" class="form-control" id="userSearch" required [(ngModel)]="userSearch"
            (keydown)="myFilter()"
