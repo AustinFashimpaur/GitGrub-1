@@ -5,14 +5,15 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   font-family: 'Roboto', sans-serif;
-  background: #E0E0E0;
-  background: url('assets/images/body.jpg');
+  /*background: #E2E4E6;*/
+  background: url('assets/images/newback.jpg');
+  background-size: cover;
 }
 
 .form-container {
-  background: whitesmoke;
+  background: beige;
   padding: 3.5em;
-  width: 500px;
+  /*width: 500px;*/
   position: fixed;
   left: 50%;
   margin-left: -250px;
@@ -29,7 +30,7 @@ button {
 
 .basic-btn {
   /*background: #37474F;*/
-  background: #F4511E;
+  background: darkred;
   color: whitesmoke;
   border-radius: 4px;
   border-color: whitesmoke;
@@ -67,12 +68,12 @@ fieldset[disabled] .basic-btn:active,
 .basic-btn.disabled.active,
 .basic-btn[disabled].active,
 fieldset[disabled] .basic-btn.active {
-  background-color: #F4511E;
+  background-color: darkred;
   border-color: #F2F2F2;
 }
 
 .basic-btn .badge {
-  color: #F4511E;
+  color: darkred;
   background-color: #FFFFFF;
 }
 
@@ -178,3 +179,4 @@ h2 {
   border-radius: 2px;
   /*width: auto;*/
 }
+

@@ -19,7 +19,7 @@ body {
 }
 
 header {
-  background: #9E9E9E;
+  background: lightgray;
   width: 100%;
   border-radius: 4px;
 }
@@ -59,10 +59,10 @@ h2 {
 .scroll-me {
   display: inline-block;
   overflow-y: scroll;
-  height: calc(100vh - 290px);
+  height: calc(100vh - 375px);
   /*margin: 0 auto;*/
   width: 100%;
-  background: #9E9E9E;
+  background: lightgray;
   border-radius: 4px;
 }
 
@@ -92,6 +92,10 @@ h2 {
   background-image: url('../../assets/images/stuff.jpg');
   color: #515151;
   border-radius: 4px;
-  background: cover;
+  background-size: cover;
+  height: 140px;
 
+}
+.banner {
+  margin-top: 30px;
 }

@@ -64,7 +64,7 @@ export class FavoritesComponent implements OnInit {
 
   removeFavs(recipe) {
     this.recipeService.removeFavz(recipe);
-    this.toasterService.pop('warning', 'Removed from favorites!');
+    this.toasterService.pop('warning', 'Removed', recipe.title + ' from Favorites');
   }
 
 

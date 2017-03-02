@@ -17,6 +17,7 @@ import { RecipeService } from "./Favorites/recipe.service";
 import {ToasterModule, ToasterService} from 'angular2-toaster';
 
 
+
 // Must export the config
 export const firebaseConfig = {
   apiKey: "AIzaSyBVR8A-Mawq6aJiudG-i1Aes_dVf3JTovw",
@@ -48,7 +49,7 @@ export const firebaseConfig = {
     ToasterModule
   ],
   providers: [AuthGuard, RecipeService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent,]
 })
 
 export class AppModule { }

@@ -6,15 +6,15 @@
   </header>
   <div id="mccheese_background">
     <div id="page" [@moveInLeft]="state">
-      <h2 class="banner">Hey {{ name.auth.displayName || 'Friend' }}, Welcome to Git Grub! Enjoy those Favorites.</h2>
-      <br>
-      <!--<img src="assets/images/filler.png" />-->
+      <!--<h2 class="banner">Hey {{ name.auth.displayName || 'Friend' }}, Welcome to Git Grub! Enjoy the Recipes.</h2><br>-->
     </div>
   </div>
-  <div class="form-group">
+  <h2 [@moveInLeft]="state" class="banner">Hey {{ name.auth.displayName || 'Friend' }}, Welcome to Git Grub! Enjoy the Recipes.</h2><br>
+
+  <!--<div class="form-group">-->
     <!--<input type="text" class="form-control" placeholder="search favorites...">-->
     <!--<span class="glyphicon glyphicon-fire col-sm-3"></span>-->
-  </div>
+  <!--</div>-->
 
 
   <!--content-->

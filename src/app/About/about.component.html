@@ -4,10 +4,12 @@
     <button (click)="favz()" class="basic-btn">Favorites</button>
     <button (click)="members()" class="basic-btn">Home</button>
   </header>
+  <h2 [@moveInLeft]="state" class="banner">Hey {{ name.auth.displayName || 'Friend' }}, Welcome to Git Grub! Enjoy this About Page.</h2>
+  <br>
   <div id="mccheese_background">
     <div id="page" [@moveInLeft]="state">
-      <h2 class="banner">Hey {{ name.auth.displayName || 'Friend' }}, Welcome to Git Grub! Enjoy this About Page.</h2>
-      <br>
+      <!--<h2 [@moveInLeft]="state" class="banner">Hey {{ name.auth.displayName || 'Friend' }}, Welcome to Git Grub! Enjoy this About Page.</h2>-->
+      <!--<br>-->
       <!--<img src="assets/images/filler.png" />-->
     </div>
   </div>
