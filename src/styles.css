@@ -6,7 +6,7 @@ body {
   background-size: cover;
   font-family: 'Roboto', sans-serif;
   background: #E0E0E0;
-  /*background: url('assets/images/MayorMcCheese.png');*/
+  background: url('assets/images/body.jpg');
 }
 
 .form-container {

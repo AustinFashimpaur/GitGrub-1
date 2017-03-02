@@ -1,6 +1,6 @@
-body {
-  background: url('../../assets/images/MayorMcCheese.png');
-}
+/*body {*/
+  /*background: url('../../assets/images/MayorMcCheese.png');*/
+/*}*/
 
 
 #toolbar {
@@ -84,7 +84,9 @@ h2 {
 }
 
 #mccheese_background {
-  background: url('../../assets/images/mcCheese.png');
+  background-image: url('../../assets/images/stuff.jpg');
   color: #515151;
   border-radius: 4px;
+  background: cover;
+
 }
