@@ -102,3 +102,7 @@ h2 {
 .banner {
   margin-top: 30px;
 }
+
+.feedback {
+  list-style: none;
+}
