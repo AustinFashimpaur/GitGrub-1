@@ -21,6 +21,9 @@ body {
   left: 50%;
   margin-left: -250px;
   border-radius: 4px;
+  box-shadow: 0px 3px 5px 0px #909090
+
+
 }
 
 button {
@@ -37,6 +40,7 @@ button {
   color: whitesmoke;
   border-radius: 4px;
   border-color: whitesmoke;
+  box-shadow: inset 0px 5px 5px 0px #909090
 }
 
 .basic-btn:hover,
@@ -47,6 +51,7 @@ button {
   color: #515151;
   background-color: whitesmoke;
   border-color: #F2F2F2;
+  box-shadow: inset 0px 3px 5px 0px #909090
 
 }
 
@@ -78,6 +83,7 @@ fieldset[disabled] .basic-btn.active {
 .basic-btn .badge {
   color: darkred;
   background-color: #FFFFFF;
+  box-shadow: inset 0px 3px 5px 0px #909090
 }
 
 
@@ -171,6 +177,7 @@ h2 {
   display: inline-block;
   min-height: 325px;
   width: 30%;
+  box-shadow: inset 0px 3px 5px 0px #909090
 }
 
 /*.memberz{*/

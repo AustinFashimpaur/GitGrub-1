@@ -17,6 +17,7 @@ header {
   background: lightgray;
   width: 100%;
   border-radius: 4px;
+
 }
 
 .basic-btn {
@@ -79,8 +80,16 @@ h2 {
 /*}*/
 
 .form-group {
+  width: 100%;
+  margin: 0 auto;
+  padding: 14px;
+}
+.form-control {
   width: 55%;
   margin: 16px auto;
+  padding: 16px;
+  /*box-shadow: 0px 3px 5px 0px #909090*/
+  text-align: center;
 }
 
 #mccheese_background {
@@ -91,6 +100,8 @@ h2 {
   height: 140px;
   margin: 0 auto;
   text-align: center;
+  box-shadow: 0px 3px 5px 0px #909090;
+
 
 }
 
