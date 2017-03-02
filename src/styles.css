@@ -175,5 +175,6 @@ h2 {
 
 .pics {
   height: 200px;
+  border-radius: 2px;
   /*width: auto;*/
 }

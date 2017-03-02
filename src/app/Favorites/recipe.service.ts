@@ -6,10 +6,11 @@ import {AngularFire, AuthProviders, AuthMethods, FirebaseListObservable} from 'a
 
 export class RecipeService {
   name: any;
+
   constructor(public af: AngularFire) {
     this.af.auth.subscribe(auth => {
       if (auth) {
-        console.log(auth);
+        // console.log(auth);
         this.name = auth;
       }
     });
@@ -22,7 +23,7 @@ export class RecipeService {
 // Add favorites to list (stays on service)
   addFavz(recipe) {
     console.log("Favz is called");
-    console.log(recipe);
+    // console.log(recipe);
     const newFav = this.af.database.object(`/recipes/${recipe.$key}/users`);
     const key = {};
     key[this.name.uid] = true;
@@ -34,7 +35,7 @@ export class RecipeService {
 // delete fav from user
   removeFavz(recipe) {
     console.log("Favz is called");
-    console.log(recipe);
+    // console.log(recipe);
     const newFav = this.af.database.object(`/recipes/${recipe.$key}/users`);
     const key = {};
     key[this.name.uid] = false;

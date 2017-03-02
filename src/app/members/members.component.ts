@@ -28,7 +28,7 @@ export class MembersComponent implements OnInit {
   constructor(public af: AngularFire, private router: Router, private recipeService: RecipeService, toasterService: ToasterService) {
     this.af.auth.subscribe(auth => {
       if (auth) {
-        console.log(auth);
+        // console.log(auth);
         this.name = auth;
       }
     });
@@ -36,7 +36,7 @@ export class MembersComponent implements OnInit {
     recipeService.getAll().subscribe(recipes => {
       this.recipes = recipes;
       this.filteredRec = this.recipes;
-      console.log(this.recipes);
+      // console.log(this.recipes);
     });
 
     this.toasterService = toasterService;
@@ -69,9 +69,18 @@ export class MembersComponent implements OnInit {
 
   }
 
-  ngOnInit() {
+  removeFavs(recipe) {
+    this.recipeService.removeFavz(recipe);
+    this.toasterService.pop('warning', 'Removed from favorites!');
   }
 
-  // angular.bootstrap(app-members);
+  isFav(recipe) {
+    return recipe.users && recipe.users[this.name.uid]
+
+  }
+
+
+  ngOnInit() {
+  }
 }
 

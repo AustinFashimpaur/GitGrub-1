@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {AngularFire, AuthProviders, AuthMethods, FirebaseListObservable} from 'angularfire2';
 import {Router} from '@angular/router';
-import {moveIn, fallIn, moveInLeft } from '../router.animations';
+import {moveIn, fallIn, moveInLeft} from '../router.animations';
 import {RecipeService} from "./recipe.service";
 import {Observable} from "rxjs";
 import {ToasterContainerComponent, ToasterService} from 'angular2-toaster';
@@ -12,7 +12,7 @@ import {ToasterContainerComponent, ToasterService} from 'angular2-toaster';
   providers: [ToasterService],
   templateUrl: 'favorites.component.html',
   styleUrls: ['favorites.component.css'],
-  animations: [moveIn(), fallIn(), moveInLeft(), ],
+  animations: [moveIn(), fallIn(), moveInLeft(),],
   host: {'[@moveIn]': ''}
 })
 export class FavoritesComponent implements OnInit {
@@ -33,7 +33,7 @@ export class FavoritesComponent implements OnInit {
     });
 
     this.recipes = recipeService.getAll().map(recipes => {
-      console.log(recipes.users);
+      // console.log(recipes.users);
       return recipes.filter(recipe => {
         if (recipe.users && recipe.users[this.name.uid]) {
           return true;
@@ -67,30 +67,10 @@ export class FavoritesComponent implements OnInit {
     this.toasterService.pop('warning', 'Removed from favorites!');
   }
 
-  // getFavs(){
-  //   this.filteredFavs = this.recipes.filter(recipe => {
-  //     return (recipe.users && recipe.users.indexOf(this.name.uid) > -1);
-  //   });
-  // }
-
 
   ngOnInit() {
   }
 }
-
-// import {moveIn, fallIn, moveInLeft} from "../router.animations";
-// import {Component} from "@angular/core/src/metadata/directives";
-// import {Router} from '@angular/router';
-//
-// @Component({
-//
-//   templateUrl: './favorites.component.html',
-//   //styleUrls: ['./members.component.css'],
-//   animations: [moveIn(), fallIn(), moveInLeft()],
-//   host: {'[@moveIn]': ''}
-// })
-// export class FavoritesComponent {
-
 
 
 
