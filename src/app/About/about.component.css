@@ -63,7 +63,7 @@ h2 {
 .scroll-me {
   display: inline-block;
   overflow-y: scroll;
-  height: calc(100vh - 501px);
+  height: calc(100vh - 420px);
   /*margin: 0 auto;*/
   width: 100%;
   background: beige;
