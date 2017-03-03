@@ -23,7 +23,7 @@
       <div class="wellz well col-sm-1 col-md-3" [@moveInLeft]="state" *ngFor="let recipe of filteredRec">
         <img class="pics" src="{{ recipe.image_url }}"/><br>
         <div class="bottomPart">
-          <h5 class="col-sm-9"><a href="{{ recipe.source_url }}">{{ recipe.title }}</a></h5><br>
+          <h5 class="col-sm-9"><a href="{{ recipe.source_url }}" target="_blank">{{ recipe.title }}</a></h5><br>
 
           <span *ngIf="isFav(recipe)" title="Remove Favorite" class="gliph glyphicon glyphicon-heart col-sm-3" (click)="removeFavs(recipe)"></span>
           <span *ngIf="!isFav(recipe)" title="Add Favorite" class="gliph glyphicon glyphicon-heart-empty col-sm-3" (click)="addFavs(recipe)"></span>
