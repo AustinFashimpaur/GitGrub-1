@@ -51,7 +51,7 @@ function moveInLeft() {
         ])
     ]);
 }
-//# sourceMappingURL=/Users/brycegroesbeck/Desktop/GitGrub/src/router.animations.js.map
+//# sourceMappingURL=/Users/i65114/Desktop/GitGrub/src/router.animations.js.map
 
 /***/ }),
 
@@ -108,7 +108,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
-//# sourceMappingURL=/Users/brycegroesbeck/Desktop/GitGrub/src/polyfills.js.map
+//# sourceMappingURL=/Users/i65114/Desktop/GitGrub/src/polyfills.js.map
 
 /***/ }),
 
@@ -170,7 +170,7 @@ var RecipeService = (function () {
     return RecipeService;
     var _a;
 }());
-//# sourceMappingURL=/Users/brycegroesbeck/Desktop/GitGrub/src/recipe.service.js.map
+//# sourceMappingURL=/Users/i65114/Desktop/GitGrub/src/recipe.service.js.map
 
 /***/ }),
 
@@ -241,7 +241,7 @@ var AboutComponent = (function () {
     return AboutComponent;
     var _a, _b;
 }());
-//# sourceMappingURL=/Users/brycegroesbeck/Desktop/GitGrub/src/about.component.js.map
+//# sourceMappingURL=/Users/i65114/Desktop/GitGrub/src/about.component.js.map
 
 /***/ }),
 
@@ -327,7 +327,7 @@ var FavoritesComponent = (function () {
     return FavoritesComponent;
     var _a, _b, _c, _d;
 }());
-//# sourceMappingURL=/Users/brycegroesbeck/Desktop/GitGrub/src/favorites.component.js.map
+//# sourceMappingURL=/Users/i65114/Desktop/GitGrub/src/favorites.component.js.map
 
 /***/ }),
 
@@ -385,7 +385,7 @@ var AuthGuard = (function () {
     return AuthGuard;
     var _a, _b;
 }());
-//# sourceMappingURL=/Users/brycegroesbeck/Desktop/GitGrub/src/auth.service.js.map
+//# sourceMappingURL=/Users/i65114/Desktop/GitGrub/src/auth.service.js.map
 
 /***/ }),
 
@@ -457,7 +457,7 @@ var EmailComponent = (function () {
     return EmailComponent;
     var _a, _b;
 }());
-//# sourceMappingURL=/Users/brycegroesbeck/Desktop/GitGrub/src/email.component.js.map
+//# sourceMappingURL=/Users/i65114/Desktop/GitGrub/src/email.component.js.map
 
 /***/ }),
 
@@ -532,7 +532,7 @@ var LoginComponent = (function () {
     return LoginComponent;
     var _a, _b;
 }());
-//# sourceMappingURL=/Users/brycegroesbeck/Desktop/GitGrub/src/login.component.js.map
+//# sourceMappingURL=/Users/i65114/Desktop/GitGrub/src/login.component.js.map
 
 /***/ }),
 
@@ -628,7 +628,7 @@ var MembersComponent = (function () {
     return MembersComponent;
     var _a, _b, _c, _d;
 }());
-//# sourceMappingURL=/Users/brycegroesbeck/Desktop/GitGrub/src/members.component.js.map
+//# sourceMappingURL=/Users/i65114/Desktop/GitGrub/src/members.component.js.map
 
 /***/ }),
 
@@ -689,7 +689,7 @@ var SignupComponent = (function () {
     return SignupComponent;
     var _a, _b;
 }());
-//# sourceMappingURL=/Users/brycegroesbeck/Desktop/GitGrub/src/signup.component.js.map
+//# sourceMappingURL=/Users/i65114/Desktop/GitGrub/src/signup.component.js.map
 
 /***/ }),
 
@@ -726,7 +726,7 @@ if (__WEBPACK_IMPORTED_MODULE_3__environments_environment__["a" /* environment *
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__angular_core__["a" /* enableProdMode */])();
 }
 __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_4__app_app_module__["a" /* AppModule */]);
-//# sourceMappingURL=/Users/brycegroesbeck/Desktop/GitGrub/src/main.js.map
+//# sourceMappingURL=/Users/i65114/Desktop/GitGrub/src/main.js.map
 
 /***/ }),
 
@@ -760,7 +760,7 @@ var AppComponent = (function () {
     ], AppComponent);
     return AppComponent;
 }());
-//# sourceMappingURL=/Users/brycegroesbeck/Desktop/GitGrub/src/app.component.js.map
+//# sourceMappingURL=/Users/i65114/Desktop/GitGrub/src/app.component.js.map
 
 /***/ }),
 
@@ -851,7 +851,7 @@ var AppModule = (function () {
     ], AppModule);
     return AppModule;
 }());
-//# sourceMappingURL=/Users/brycegroesbeck/Desktop/GitGrub/src/app.module.js.map
+//# sourceMappingURL=/Users/i65114/Desktop/GitGrub/src/app.module.js.map
 
 /***/ }),
 
@@ -887,7 +887,7 @@ var router = [
     { path: 'about', component: __WEBPACK_IMPORTED_MODULE_7__About_about_component__["a" /* AboutComponent */] }
 ];
 var routes = __WEBPACK_IMPORTED_MODULE_0__angular_router__["b" /* RouterModule */].forRoot(router);
-//# sourceMappingURL=/Users/brycegroesbeck/Desktop/GitGrub/src/app.routes.js.map
+//# sourceMappingURL=/Users/i65114/Desktop/GitGrub/src/app.routes.js.map
 
 /***/ }),
 
@@ -903,7 +903,7 @@ var routes = __WEBPACK_IMPORTED_MODULE_0__angular_router__["b" /* RouterModule *
 var environment = {
     production: false
 };
-//# sourceMappingURL=/Users/brycegroesbeck/Desktop/GitGrub/src/environment.js.map
+//# sourceMappingURL=/Users/i65114/Desktop/GitGrub/src/environment.js.map
 
 /***/ }),
 
@@ -1290,14 +1290,14 @@ webpackContext.id = 951;
 /***/ 975:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"memberz form-container container-fluidx\" id=\"toolbar\">\n  <header [@fallIn]=\"state\">\n    <button (click)=\"logout()\" class=\"basic-btn\">Logout</button>\n    <button (click)=\"favz()\" class=\"basic-btn\">Favorites</button>\n    <button (click)=\"members()\" class=\"basic-btn\">Home</button>\n  </header>\n  <div id=\"mccheese_background\">\n    <!--<div id=\"page\" [@moveInLeft]=\"state\">-->\n    <div id=\"logo1\">\n      <img [@fallIn]=\"state\" id=logo src=\"assets/images/logo3.png\"/>\n    </div>\n    <!--<h2 class=\"banner\">Hey {{ name.auth.displayName || 'Friend' }}, Welcome to Git Grub! Enjoy the Recipes.</h2><br>-->\n    <!--</div>-->\n  </div>\n  <h2 [@moveInLeft]=\"state\" class=\"banner\">Hey {{ name.auth.displayName || 'Friend' }}, Welcome to Git Grub! Enjoy the\n    Recipes.</h2><br>\n\n  <div id=\"aboutme\">\n    <h3 [@moveInLeft]=\"state\"> Welcome to the about page.</h3>\n    <p [@fallIn]=\"state\">\n      This app was created by Austin Fashimpaur, Bryce Groesbeck and Kevin Kirkman.\n      This app is dedicated to our love of food.\n    </p><br>\n    <div class=\"scroll-me\">\n      <div>\n        <ul class=\"feedback\">\n          <li>\n            <blockquote>\"your app astonished me, looking like a good crafted and professional application. Also, details\n              are\n              important being able to login with google+ and graphics are looking attractive\" - NMA\n            </blockquote>\n          </li>\n          <br>\n          <li>\n            <blockquote>\"I really like this app it is user friendly and I like that I don't have to make up another\n              login\n              for it, I can just use my google login. The Images are great and I like the wide arrange of recipes that I\n              can use. I also liked the fact that I could save favorites and go to that list quickly. Very good app.\" -\n              JSN\n            </blockquote>\n          </li>\n          <br>\n          <li>\n            <blockquote>\"I like this app, it is something I can see myself using. I like that I can login however I want\n              and favorite things\" - JJG\n            </blockquote>\n          </li>\n          <br>\n          <li>\n            <blockquote>\"The interface and animations are attractive and modern while still feeling clean and\n              professional.\" - MBT\n            </blockquote>\n          </li>\n          <br>\n          <li>\n            <blockquote>\"Looks good, good job\" - CEW\n            </blockquote>\n          </li>\n          <li>\n            <blockquote>\"This looks like a tasteful site to use\" - CLP\n            </blockquote>\n          </li>\n          <li>\n            <blockquote>\"I liked the options to add to a Favorites list. The style and organization was great as well.\n              It seems well thought-out, and has practical use, especially with the option to save to a Favorites list,\n              for people wanting to keep track of recipes.\" - MJC Verified\n            </blockquote>\n          </li>\n\n        </ul>\n      </div>\n    </div>\n\n  </div>\n</div>\n"
+module.exports = "<div class=\"memberz form-container container-fluidx\" id=\"toolbar\">\n  <header [@fallIn]=\"state\">\n    <button (click)=\"logout()\" class=\"basic-btn\">Logout</button>\n    <button (click)=\"members()\" class=\"basic-btn\">Home</button>\n    <button (click)=\"favz()\" class=\"basic-btn\">Favorites</button>\n    <button (click)=\"about()\" class=\"basic-btn\">About</button>\n  </header>\n  <div id=\"mccheese_background\">\n    <!--<div id=\"page\" [@moveInLeft]=\"state\">-->\n    <div id=\"logo1\">\n      <img [@fallIn]=\"state\" id=logo src=\"assets/images/logo3.png\"/>\n    </div>\n    <!--<h2 class=\"banner\">Hey {{ name.auth.displayName || 'Friend' }}, Welcome to Git Grub! Enjoy the Recipes.</h2><br>-->\n    <!--</div>-->\n  </div>\n  <h2 [@moveInLeft]=\"state\" class=\"banner\">Hey {{ name.auth.displayName || 'Friend' }}, Welcome to Git Grub! Enjoy the\n    Recipes.</h2><br>\n\n  <div id=\"aboutme\">\n    <h3 [@moveInLeft]=\"state\"> Welcome to the about page.</h3>\n    <p [@fallIn]=\"state\">\n      This app was created by Austin Fashimpaur, Bryce Groesbeck and Kevin Kirkman.\n      This app is dedicated to our love of food.\n    </p><br>\n    <div class=\"scroll-me\">\n      <div>\n        <ul class=\"feedback\">\n          <li>\n            <blockquote>\"your app astonished me, looking like a good crafted and professional application. Also, details\n              are\n              important being able to login with google+ and graphics are looking attractive\" - NMA\n            </blockquote>\n          </li>\n          <br>\n          <li>\n            <blockquote>\"I really like this app it is user friendly and I like that I don't have to make up another\n              login\n              for it, I can just use my google login. The Images are great and I like the wide arrange of recipes that I\n              can use. I also liked the fact that I could save favorites and go to that list quickly. Very good app.\" -\n              JSN\n            </blockquote>\n          </li>\n          <br>\n          <li>\n            <blockquote>\"I like this app, it is something I can see myself using. I like that I can login however I want\n              and favorite things\" - JJG\n            </blockquote>\n          </li>\n          <br>\n          <li>\n            <blockquote>\"The interface and animations are attractive and modern while still feeling clean and\n              professional.\" - MBT\n            </blockquote>\n          </li>\n          <br>\n          <li>\n            <blockquote>\"Looks good, good job\" - CEW\n            </blockquote>\n          </li>\n          <li>\n            <blockquote>\"This looks like a tasteful site to use\" - CLP\n            </blockquote>\n          </li>\n          <li>\n            <blockquote>\"I liked the options to add to a Favorites list. The style and organization was great as well.\n              It seems well thought-out, and has practical use, especially with the option to save to a Favorites list,\n              for people wanting to keep track of recipes.\" - MJC Verified\n            </blockquote>\n          </li>\n          <li>\n            <blockquote>\n              \"I'd like some more tabs to be able to sort my food better even in my favorites tab id like a tab for each meal like breakfast and dinner but also an all tab or maybe even a random button to enjoy a random treat.\" - RKH\n            </blockquote>\n          </li>\n          <li>\n            <blockquote>\n              \"Actually very nicely done. I love the pictures. They entice me to want to try the recipes. I would only add a concordance to make it a little easier to find specific types of food. Nice job.\" - LB\n            </blockquote>\n          </li>\n          <li>\n            <blockquote>\n              \"I like it. It is visually pleasing and well laid out.\" - LWF\n            </blockquote>\n          </li>\n          <li>\n          <blockquote>\n          \"I like the site and it’s very user friendly, with recipes I would definitely make.\" - SS\n          </blockquote>\n        </li>\n          <li>\n            <blockquote>\n            \"A tasty photo greets the you at the login, but improvement to the main login to identify what this website is for is a must.  Within the website, a filter option with breakfast, lunch, dinner, snacks, and desserts as well as types of foods (e.g. Asian, BBQ, Mexican, etc.) would be the icing on this treat of a site \" An option to add your own recipe would be the extra seasoning this website needs. A great and useful idea for a page.  Selling advertising space for grocery stores near the user would be useful too, especially if the ingredients in a recipe could be automatically put into a shopping cart from a nearby store. - JPB\n            </blockquote>\n          </li>\n          <li>\n            <blockquote>\n            \"\"\n            </blockquote>\n          </li>\n          <li>\n            <blockquote>\n\n            </blockquote>\n          </li>\n          <li>\n            <blockquote>\n\n            </blockquote>\n          </li>\n\n\n        </ul>\n      </div>\n    </div>\n\n  </div>\n</div>\n"
 
 /***/ }),
 
 /***/ 976:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"memberz form-container container-fluidx\" id=\"toolbar\">\n  <header [@fallIn]=\"state\">\n    <button (click)=\"logout()\" class=\"basic-btn\">Logout</button>\n    <button (click)=\"members()\" class=\"basic-btn\">Home</button>\n    <button (click)=\"about()\" class=\"basic-btn\">About</button>\n  </header>\n  <div id=\"mccheese_background\">\n    <!--<div id=\"page\" [@moveInLeft]=\"state\">-->\n    <div id=\"logo1\">\n      <img [@fallIn]=\"state\" id=logo src=\"assets/images/logo3.png\"/>\n    </div>\n\n  </div>\n  <h2 [@moveInLeft]=\"state\" class=\"banner\">Hey {{ name.auth.displayName || 'Friend' }}, Welcome to Git Grub! Enjoy the Favorites.</h2><br>\n\n  <!--content-->\n  <div class=\"scroll-me\">\n    <div class=\"center-me\">\n      <div class=\"wellz well col-sm-1 col-md-3\" [@fallIn]=\"state\" *ngFor=\"let recipe of recipes | async\">\n        <img class=\"pics\" src=\"{{ recipe.image_url }}\"/><br>\n        <div class=\"bottomPart\">\n          <h5 class=\"col-sm-9\"><a href=\"{{ recipe.source_url }}\" target=\"_blank\">{{ recipe.title }}</a></h5><br>\n          <span class=\"trash glyphicon glyphicon-trash col-sm-3\" title=\"Remove from Favorites\" (click)=\"removeFavs(recipe)\"></span>\n        </div>\n      </div>\n    </div>\n    <toaster-container></toaster-container>\n  </div>\n\n</div>\n\n"
+module.exports = "<div class=\"memberz form-container container-fluidx\" id=\"toolbar\">\n  <header [@fallIn]=\"state\">\n    <button (click)=\"logout()\" class=\"basic-btn\">Logout</button>\n    <button (click)=\"members()\" class=\"basic-btn\">Home</button>\n    <button (click)=\"favz()\" class=\"basic-btn\">Favorites</button>\n    <button (click)=\"about()\" class=\"basic-btn\">About</button>\n  </header>\n  <div id=\"mccheese_background\">\n    <!--<div id=\"page\" [@moveInLeft]=\"state\">-->\n    <div id=\"logo1\">\n      <img [@fallIn]=\"state\" id=logo src=\"assets/images/logo3.png\"/>\n    </div>\n\n  </div>\n  <h2 [@moveInLeft]=\"state\" class=\"banner\">Hey {{ name.auth.displayName || 'Friend' }}, Welcome to Git Grub! Enjoy the Favorites.</h2><br>\n\n  <!--content-->\n  <div class=\"scroll-me\">\n    <div class=\"center-me\">\n      <div class=\"wellz well col-sm-1 col-md-3\" [@fallIn]=\"state\" *ngFor=\"let recipe of recipes | async\">\n        <img class=\"pics\" src=\"{{ recipe.image_url }}\"/><br>\n        <div class=\"bottomPart\">\n          <h5 class=\"col-sm-9\"><a href=\"{{ recipe.source_url }}\" target=\"_blank\">{{ recipe.title }}</a></h5><br>\n          <span class=\"trash glyphicon glyphicon-trash col-sm-3\" title=\"Remove from Favorites\" (click)=\"removeFavs(recipe)\"></span>\n        </div>\n      </div>\n    </div>\n    <toaster-container></toaster-container>\n  </div>\n\n</div>\n\n"
 
 /***/ }),
 
@@ -1325,7 +1325,7 @@ module.exports = "\n\n<div class=\"form-container\">\n\n  <!--<h3 id=\"header\">
 /***/ 980:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"memberzx form-container container-fluidx\" id=\"toolbar\">\n  <header [@fallIn]=\"state\">\n    <button (click)=\"logout()\" class=\"basic-btn\">Logout</button>\n    <button (click)=\"favz()\" class=\"basic-btn\">Favorites</button>\n    <button (click)=\"about()\" class=\"basic-btn\">About</button>\n  </header>\n  <div id=\"mccheese_background\">\n    <div id=\"logo1\">\n      <img [@fallIn]=\"state\" id=logo src=\"assets/images/logo3.png\"/>\n    </div>\n\n  </div>\n  <h2 [@moveInLeft]=\"state\" class=\"banner\">Hey {{ name.auth.displayName || name.auth.email  }}, Welcome to Git Grub! Enjoy the Recipes.</h2><br>\n  <div class=\"form-group\">\n    <input [@fallIn]=\"state\" type=\"text\" class=\"form-control\" id=\"userSearch\" required [(ngModel)]=\"userSearch\"\n           (keydown)=\"myFilter()\"\n           name=\"name\" placeholder=\"Search Recipes...\">\n  </div>\n\n  <!--content-->\n  <div class=\"scroll-me\">\n    <div class=\"center-me\">\n      <div class=\"wellz well col-sm-1 col-md-3\" [@moveInLeft]=\"state\" *ngFor=\"let recipe of filteredRec\">\n        <img class=\"pics\" src=\"{{ recipe.image_url }}\"/><br>\n        <div class=\"bottomPart\">\n          <h5 class=\"col-sm-9\"><a href=\"{{ recipe.source_url }}\" target=\"_blank\">{{ recipe.title }}</a></h5><br>\n\n          <span *ngIf=\"isFav(recipe)\" title=\"Remove Favorite\" class=\"gliph glyphicon glyphicon-heart col-sm-3\" (click)=\"removeFavs(recipe)\"></span>\n          <span *ngIf=\"!isFav(recipe)\" title=\"Add Favorite\" class=\"gliph glyphicon glyphicon-heart-empty col-sm-3\" (click)=\"addFavs(recipe)\"></span>\n\n        </div>\n      </div>\n    </div>\n    <toaster-container></toaster-container>\n  </div>\n</div>\n\n\n"
+module.exports = "<div class=\"memberzx form-container container-fluidx\" id=\"toolbar\">\n  <header [@fallIn]=\"state\">\n    <button (click)=\"logout()\" class=\"basic-btn\">Logout</button>\n    <button (click)=\"members()\" class=\"basic-btn\">Home</button>\n    <button (click)=\"favz()\" class=\"basic-btn\">Favorites</button>\n    <button (click)=\"about()\" class=\"basic-btn\">About</button>\n  </header>\n  <div id=\"mccheese_background\">\n    <div id=\"logo1\">\n      <img [@fallIn]=\"state\" id=logo src=\"assets/images/logo3.png\"/>\n    </div>\n\n  </div>\n  <h2 [@moveInLeft]=\"state\" class=\"banner\">Hey {{ name.auth.displayName || name.auth.email  }}, Welcome to Git Grub! Enjoy the Recipes.</h2><br>\n  <div class=\"form-group\">\n    <input [@fallIn]=\"state\" type=\"text\" class=\"form-control\" id=\"userSearch\" required [(ngModel)]=\"userSearch\"\n           (keydown)=\"myFilter()\"\n           name=\"name\" placeholder=\"Search Recipes...\">\n  </div>\n\n  <!--content-->\n  <div class=\"scroll-me\">\n    <div class=\"center-me\">\n      <div class=\"wellz well col-sm-1 col-md-3\" [@moveInLeft]=\"state\" *ngFor=\"let recipe of filteredRec\">\n        <img class=\"pics\" src=\"{{ recipe.image_url }}\"/><br>\n        <div class=\"bottomPart\">\n          <h5 class=\"col-sm-9\"><a href=\"{{ recipe.source_url }}\" target=\"_blank\">{{ recipe.title }}</a></h5><br>\n\n          <span *ngIf=\"isFav(recipe)\" title=\"Remove Favorite\" class=\"gliph glyphicon glyphicon-heart col-sm-3\" (click)=\"removeFavs(recipe)\"></span>\n          <span *ngIf=\"!isFav(recipe)\" title=\"Add Favorite\" class=\"gliph glyphicon glyphicon-heart-empty col-sm-3\" (click)=\"addFavs(recipe)\"></span>\n\n        </div>\n      </div>\n    </div>\n    <toaster-container></toaster-container>\n  </div>\n</div>\n\n\n"
 
 /***/ }),
 
