@@ -44,11 +44,11 @@ button {
 
 .basic-btn {
   /*background: #37474F;*/
-  background: darkred;
+  background: #3D0000;
   color: whitesmoke;
-  border-radius: 4px;
+  /*border-radius: 4px;*/
   border-color: whitesmoke;
-  box-shadow: inset 0px 5px 5px 0px #909090
+  /*box-shadow: inset 0px 5px 5px 0px #909090*/
 }
 
 .basic-btn:hover,
@@ -59,7 +59,7 @@ button {
   color: #515151;
   background-color: whitesmoke;
   border-color: #F2F2F2;
-  box-shadow: inset 0px 3px 5px 0px #909090
+  /*box-shadow: inset 0px 3px 5px 0px #909090*/
 
 }
 
@@ -84,14 +84,14 @@ fieldset[disabled] .basic-btn:active,
 .basic-btn.disabled.active,
 .basic-btn[disabled].active,
 fieldset[disabled] .basic-btn.active {
-  background-color: darkred;
+  background-color: #3D0000;
   border-color: #F2F2F2;
 }
 
 .basic-btn .badge {
-  color: darkred;
+  color: #3D0000;
   background-color: #FFFFFF;
-  box-shadow: inset 0px 3px 5px 0px #909090
+  /*box-shadow: inset 0px 3px 5px 0px #909090*/
 }
 
 input.txt {

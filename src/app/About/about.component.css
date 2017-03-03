@@ -1,10 +1,11 @@
 #logo {
   margin: 0 auto;
   text-align: center;
+  cursor: pointer;
 }
 
 #logo:hover {
-  transform: rotate(360deg) scale(1.1);
+  transform: scale(1.1);
 }
 
 #aboutme{
@@ -33,7 +34,7 @@ header {
   margin: 0 auto;
   text-align: center;
   padding: 15px;
-  border-radius: 4px;
+  /*border-radius: 4px;*/
 }
 
 #page {
@@ -113,3 +114,7 @@ h2 {
   list-style: none;
 }
 
+blockquote {
+  color: #3D0000;
+  border: none;
+}
