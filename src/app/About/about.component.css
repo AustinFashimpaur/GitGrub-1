@@ -66,7 +66,7 @@ h2 {
   height: calc(100vh - 375px);
   /*margin: 0 auto;*/
   width: 100%;
-  background: lightgray;
+  background: beige;
   border-radius: 4px;
 }
 
@@ -111,12 +111,3 @@ h2 {
   list-style: none;
 }
 
-.scroll-me {
-  display: inline-block;
-  overflow-y: scroll;
-  height: calc(100vh - 375px);
-  /*margin: 0 auto;*/
-  width: 100%;
-  background: beige;
-  border-radius: 4px;
-}
