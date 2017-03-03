@@ -8,7 +8,7 @@
   <div id="mccheese_background">
     <!--<div id="page" [@moveInLeft]="state">-->
     <div id="logo1">
-      <img [@fallIn]="state" id=logo src="assets/images/logo3.png"/>
+      <img [@fallIn]="state" id=logo src="assets/images/logo3.png" (click)="members()"/>
     </div>
     <!--<h2 class="banner">Hey {{ name.auth.displayName || 'Friend' }}, Welcome to Git Grub! Enjoy the Recipes.</h2><br>-->
     <!--</div>-->
@@ -17,7 +17,7 @@
     About page.</h2><br>
 
   <div id="aboutme">
-    <h3 [@moveInLeft]="state"> Welcome to the about page.</h3>
+    <!--<h3 [@moveInLeft]="state"> Welcome to the about page.</h3>-->
     <p [@fallIn]="state">
       This app was created by Austin Fashimpaur, Bryce Groesbeck and Kevin Kirkman.
       This app is dedicated to our love of food.
