@@ -56,7 +56,11 @@
   border-radius: 4px;
   background-color: beige;
   width: 30%;
-  /*text-align: center;*/
+  text-align: center;
+}
+
+.logo{
+  text-align: center;
 }
 
 /*#verified {*/

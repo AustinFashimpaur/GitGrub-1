@@ -175,7 +175,7 @@ h2 {
     width: 90%;
     margin-left: -45%;
     /*text-align: center;*/
-    /*text-align: center;*/
+    text-align: center;
   }
 
   button {
@@ -211,4 +211,12 @@ header {
 
 .logout{
   float: right;
+}
+
+.fa {
+  float: left;
+}
+
+.mem{
+  float: left;
 }
