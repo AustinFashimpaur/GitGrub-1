@@ -55,7 +55,8 @@
 .form-container {
   border-radius: 4px;
   background-color: beige;
-  width: 30%
+  width: 30%;
+  text-align: center;
 }
 
 /*#verified {*/
